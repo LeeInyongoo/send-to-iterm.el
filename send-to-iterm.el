@@ -1,4 +1,4 @@
-;;; iterm.el --- sends selections to iTerm2.app -*- lexical-binding: t; -*-
+;;; send-to-iterm.el --- sends selections to iTerm2.app -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2016 David Little
 
@@ -217,4 +217,4 @@ point (determined by `iterm-default-thing') instead."
     (iterm-send-string (concat "cd " (shell-quote-argument (file-name-directory (buffer-file-name)))))))
 
 (provide 'iterm)
-;;; iterm.el ends here
+;;; send-to-iterm.el ends here
