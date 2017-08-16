@@ -204,6 +204,12 @@ point (determined by `iterm-default-thing') instead."
   (when (buffer-file-name)
     (iterm-send-string (concat "include(\"" (buffer-file-name) "\"\)"))))
 
+(defun iterm-send-file-matlab ()
+  "Load current file in julia."
+  (interactive)
+  (when (buffer-file-name)
+    (iterm-send-string (concat "run('" (buffer-file-name) "\')"))))
+
 (defun iterm-cwd-julia ()
   "Change to the directory of the current file in an julia session."
   (interactive)  
