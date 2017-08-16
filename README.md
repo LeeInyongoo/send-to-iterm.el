@@ -23,6 +23,12 @@ It defines the following commands:
 
 Pull requests for other, language specific commands are welcome.
 
+# Plans
+
+Eventually I want to make the implementation for this more language generic, so
+you can just define a few variables for each language rather than having to
+define a new function.
+
 # Installation & Configuration
 
 I use [use-package](https://github.com/jwiegley/use-package) to install and
